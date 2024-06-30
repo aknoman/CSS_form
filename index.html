@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Flexbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Navigation with Icons</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            
+        }
+        .login-form input{
+            margin-top: 1em;
+            font-size: 1em;
+            padding: 5px 10px;
+        }
+        .login-form input[type="submit"]{
+            background: goldenrod;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            font-weight: 700;
+        }
+.container{
+    border: 3px dotted purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 100px;
+}
+        .box{
+            font-size: 3ex;
+            font-weight: 700;
+            border: 3px dashed paleturquoise;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div> <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div> <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div> <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+    </div>
+
+    <header>
+        <nav>
+            <span>
+            <a href="">Home</a>
+            <a href="">Dashboard</a>
+            <a href="">Inventory</a>
+        </span>
+       <span>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+        </span>
+        </nav>
+    </header>
+
+<section class="login-container">
+    <form class="login-form">
+        <h1>Please Login</h1>
+        <input type="email" name="" id="" placeholder="Tour Email" required>
+        <input type="password" name="" id="" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </section>
+    </form>
+</body>
+</html>
